@@ -1,22 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_70
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      List<int> list = new List<int>();
-      while (true)
-      {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
+        public static void Main(string[] args)
         {
-          break;
+            List<int> list = new List<int>();
+
+            while (true)
+            {
+                int input = Convert.ToInt32(Console.ReadLine());
+
+                if (input == -1)
+                {
+                    var greatest = list.Max();
+                    Console.WriteLine("Greatest number: " + greatest);
+                    break;
+                }
+
+                list.Add(input);
+            }
         }
-        list.Add(input);
-      }
     }
-  }
 }

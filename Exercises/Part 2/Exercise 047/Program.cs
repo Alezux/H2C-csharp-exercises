@@ -1,14 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_47
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Where to?");
+            int number = Convert.ToInt32(Console.ReadLine());
 
-      // Write your code here:
-      
+            Console.WriteLine("Where from?");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+            while (number > number2)
+            {
+                number2++;
+                Console.WriteLine(number2);
+
+                if (number <= number2)
+                {
+                    number2--;
+                    break;
+                }
+            }
+        }
     }
-  }
 }

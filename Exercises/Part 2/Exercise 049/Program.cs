@@ -1,18 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_49
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      // Call your method here:
- 
-    }
+        public static void Main(string[] args)
+        {
+            PrintPhrase();
+        }
 
-    // Write your method here:
-    public static void PrintPhrase() {
-
+        public static void PrintPhrase()
+        {
+            Console.WriteLine("In a hole in the ground there lived a method");
+        }
     }
-  }
 }

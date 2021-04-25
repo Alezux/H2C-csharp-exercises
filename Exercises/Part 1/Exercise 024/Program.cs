@@ -1,14 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_24
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Your speed:");
+            int speed = Convert.ToInt32(Console.ReadLine());
 
-      // Write your code here:
-      
+            if (speed < 125)
+            {
+                Console.WriteLine("Slow!");
+            }
+
+            if (speed > 125)
+            {
+                Console.WriteLine("Speeding!");
+            }
+        }
     }
-  }
 }
