@@ -1,23 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_73
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      List<int> list = new List<int>();
-      while (true)
-      {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
+        public static void Main(string[] args)
         {
-          break;
-        }
-        list.Add(input);
-      }
+            List<int> list = new List<int>();
 
+            while (true)
+            {
+                int input = Convert.ToInt32(Console.ReadLine());
+
+                if (input == -1)
+                {
+                    var summation = list.Sum();
+                    Console.WriteLine(summation);
+                    break;
+                }
+
+                list.Add(input);
+            }
+        }
     }
-  }
 }

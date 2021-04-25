@@ -1,23 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_67
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      List<string> list = new List<string>();
-      while (true)
-      {
-        string input = Console.ReadLine();
-        if (input == "")
+        public static void Main(string[] args)
         {
-          break;
-        }
-        list.Add(input);
-      }
+            List<string> list = new List<string>();
 
+            while (true)
+            {
+                string input = Console.ReadLine();
+
+                if (input == "")
+                {
+                    var firstItem = list.First();
+                    var lastItem = list.Last();
+                    Console.WriteLine(firstItem);
+                    Console.WriteLine(lastItem);
+                    break;
+                }
+
+                list.Add(input);
+            }
+        }
     }
-  }
 }

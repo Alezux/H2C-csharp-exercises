@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_81
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      // You can test your method here
+        public static void Main(string[] args)
+        {
+            int[] array = { 5, 1, 3, 4, 2 };
+            PrintNeatly(array);
+        }
 
+        public static void PrintNeatly(int[] array)
+        {
+            Console.Write("{0}", string.Join(", ", array));
+        }
     }
-
-    public static void PrintNeatly(int[] array)
-    {
-
-    }
-  }
 }
 

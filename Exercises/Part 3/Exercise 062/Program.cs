@@ -1,29 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace exercise_62
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      List<string> list = new List<string>();
-      while (true)
-      {
-        string input = Console.ReadLine();
-        if (input == "")
+        public static void Main(string[] args)
         {
-          break;
+            List<string> list = new List<string>();
+
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (input == "")
+                {
+                    break;
+                }
+
+                list.Add(input);
+            }
+
+            Console.WriteLine(list[2]);
         }
-
-        list.Add(input);
-      }
-
-      // BEGIN SOLUTION
-      Console.WriteLine(list[0]);
-      // END SOLUTION
     }
-
-  }
 }

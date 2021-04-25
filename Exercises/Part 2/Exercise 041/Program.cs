@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_41
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-
-      // Write your code here:
-      
+        public static void Main(string[] args)
+        {
+            int number = Convert.ToInt32(Console.ReadLine());
+            int multi = number * number;
+            Console.WriteLine(multi);
+        }
     }
-  }
 }
