@@ -1,16 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_96
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    //Valmis
+    class Program
     {
-      // No need to code here.
-      // Create Room.cs and follow the instructions!
-
+        public static void Main(string[] args)
+        {
+            Room room = new Room();
+        }
     }
-  }
+
+    class Room
+    {
+        private string code;
+        private int sEats;
+
+        public Room(string classCode, int numberOfSEats)
+        {
+            this.code = classCode;
+            this.sEats = numberOfSEats;
+        }
+    }
 }
 
 
